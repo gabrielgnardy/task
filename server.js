@@ -9,9 +9,6 @@ dotenv.config();
 
 const app = express();
 app.use(cors());
-app.use(cors({
-  origin: ['https://sistema-crud-zeta.vercel.app']
-}));
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 app.use(express.json());
 
