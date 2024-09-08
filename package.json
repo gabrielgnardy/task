@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js",
         "run": "node server.js",
         "build": "react-scripts build",
         "dev": "nodemon server.js",
+        "start": "node index.js",
         "swagger": "node swagger.js"
     },
     "dependencies": {
