@@ -8,8 +8,11 @@ const swaggerFile = require('./swagger-output.json');
 dotenv.config();
 
 const app = express();
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 app.use(cors());
+app.use(cors({
+  origin: ['https://sistema-crud-zeta.vercel.app/']
+}));
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 app.use(express.json());
 
 const routes = require('./routes');
