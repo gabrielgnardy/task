@@ -2,6 +2,8 @@
 
 Este projeto é uma API para gerenciamento de tarefas, construída com **Node.js**, **Express**, **Sequelize**, e utilizando **JWT** para autenticação. A API permite criar, atualizar, listar e deletar tarefas, além de contar com um sistema de autenticação de usuários e redefinição de senha. O **Swagger** é utilizado para documentar e testar a API de maneira interativa.
 
+Demonstração ao vivo:  `https://task-flax-chi.vercel.app`
+
 ## Funcionalidades
 
 - **Autenticação de Usuário**: Registro, login e autenticação de usuários com JWT.
